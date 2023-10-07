@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container-nav {
+  max-width: 1500px;
+}
+
+.overlay-card {
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  width: 500px;
+  border: none;
+}
+
+.p-centrado {
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.background-container {
+  background-image: url('/images/ba1.jpg');
+  background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.background-container::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color de fondo negro con 50% de opacidad */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: brightness(0.5);
+}
+
+.card-mod {
+  width: 80%;
+  /* Reducir el ancho de la tarjeta */
+  max-width: 400px;
+  /* Establecer un ancho máximo */
+  margin: 0 auto;
+  /* Centrar horizontalmente */
+}
+
+.btn-mod {
+  margin: 10px;
+}
+
+/* Media query para pantalla más pequeña (por ejemplo, tablet o móvil) */
+@media screen and (max-width: 768px) {
+  .background-container {
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .card-mod {
+    width: 90%;
+    /* Cambia el ancho de la tarjeta para adaptarlo a pantallas más pequeñas */
+    max-width: none;
+    /* Elimina el ancho máximo */
+  }
+
+
+}
+
+
+.caja-oradores {
+  margin-top: 10px;
+  text-align: center;
+  /* Centrar el texto horizontalmente */
+  color: black;
+}
+
+.different-size {
+  font-size: 30px;
+  /* Tamaño de fuente diferente para "oradores" */
+  display: block;
+  /* Forzar un salto de línea */
+}
+
+
+.yellow-box {
+
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  background-color: #F8BC07;
+  color: black;
+  border-radius: 5px;
+}
+
+.cyan-box {
+
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  background-color: #17A2B9;
+  color: white;
+  border-radius: 5px;
+}
+
+.box-mod {
+  display: flex;
+
+}
+
+
+
+.gray-box {
+
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+}
+
+.red-box {
+
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  background-color: #DB3545;
+  color: white;
+  border-radius: 5px;
+}
+
+.container-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Agrega un espacio en la parte superior para evitar superposiciones */
+}
+
+.btn-mod {
+  width: 100%;
+}
+
+
+
+footer {
+  background-color: #1E516F;
+  /* Fondo azul marino */
+  color: #fff;
+  /* Letras blancas */
+  height: auto;
+  /* Cambia la altura a auto */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  width: 100%;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer nav ul li {
+  margin: 10px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  /* Letras blancas */
+  font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  footer nav ul {
+
+    flex-direction: column;
+
+  }
+
+  footer nav ul li {
+    margin: 5px;
+
+  }
+
+
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container-mid {
+  display: flex;
+  height: 500px;
+  width: 100%;
+}
+
+.caja-1 {
+  flex: 1;
+  height: 100%;
+}
+
+.image-div {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ajusta la imagen al tamaño del div */
+}
+
+.caja-2 {
+  flex: 1;
+  background-color: #353A40;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content {
+  flex: 1;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-conocemas {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-conocemas:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Para pantallas pequeñas (hasta 600px de ancho) */
+@media (max-width: 600px) {
+  .container-mid {
+    flex-direction: column;
+    /* Cambia la dirección del flexbox a columna */
+    height: auto;
+    /* Elimina la altura fija para adaptarse al contenido */
+  }
+
+  .caja-1,
+  .caja-2 {
+    flex: 1;
+    width: 100%;
+    /* Asegura que ambos lados ocupen el ancho completo */
+  }
+
+  .caja-2 {
+    padding: 10px;
+    /* Reduce el espacio interno */
+  }
+
+  .h1-container{
+    font-size: 20px;
+  }
+  .p-container{
+    font-size: 14px;
+  }
+}
+
+/* Para pantallas medianas (601px a 900px de ancho) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .container-mid {
+    flex-direction: column;
+    /* Cambia la dirección del flexbox a columna */
+    height: auto;
+    /* Elimina la altura fija para adaptarse al contenido */
+  }
+
+  .left-half,
+  .right-half {
+    flex: 1;
+    width: 100%;
+    /* Asegura que ambos lados ocupen el ancho completo */
+  }
+
+  .right-half {
+    padding: 15px;
+    /* Aumenta un poco el espacio interno */
+  }
+}
