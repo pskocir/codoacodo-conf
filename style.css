@@ -50,9 +50,7 @@
 
 .card-mod {
   width: 80%;
-  /* Reducir el ancho de la tarjeta */
   max-width: 400px;
-  /* Establecer un ancho máximo */
   margin: 0 auto;
   /* Centrar horizontalmente */
 }
@@ -61,7 +59,7 @@
   margin: 10px;
 }
 
-/* Media query para pantalla más pequeña (por ejemplo, tablet o móvil) */
+
 @media screen and (max-width: 768px) {
   .background-container {
     justify-content: center;
@@ -71,11 +69,8 @@
 
   .card-mod {
     width: 90%;
-    /* Cambia el ancho de la tarjeta para adaptarlo a pantallas más pequeñas */
     max-width: none;
-    /* Elimina el ancho máximo */
   }
-
 
 }
 
@@ -83,17 +78,13 @@
 .caja-oradores {
   margin-top: 10px;
   text-align: center;
-  /* Centrar el texto horizontalmente */
   color: black;
 }
 
 .different-size {
   font-size: 30px;
-  /* Tamaño de fuente diferente para "oradores" */
   display: block;
-  /* Forzar un salto de línea */
 }
-
 
 .yellow-box {
 
@@ -122,8 +113,6 @@
 
 }
 
-
-
 .gray-box {
 
   font-size: 14px;
@@ -150,14 +139,11 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  /* Agrega un espacio en la parte superior para evitar superposiciones */
 }
 
 .btn-mod {
   width: 100%;
 }
-
-
 
 footer {
   background-color: #1E516F;
@@ -196,7 +182,6 @@ footer nav ul li a {
   font-size: 16px;
 }
 
-/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   footer nav ul {
 
@@ -211,8 +196,6 @@ footer nav ul li a {
 
 
 }
-
-
 
 body {
   font-family: Arial, sans-serif;
@@ -275,11 +258,10 @@ p {
   color: #000;
 }
 
-/* Para pantallas pequeñas (hasta 600px de ancho) */
+/* Para pantallas chicas (hasta 600px de ancho) */
 @media (max-width: 600px) {
   .container-mid {
     flex-direction: column;
-    /* Cambia la dirección del flexbox a columna */
     height: auto;
     /* Elimina la altura fija para adaptarse al contenido */
   }
@@ -288,12 +270,10 @@ p {
   .caja-2 {
     flex: 1;
     width: 100%;
-    /* Asegura que ambos lados ocupen el ancho completo */
   }
 
   .caja-2 {
     padding: 10px;
-    /* Reduce el espacio interno */
   }
 
   .h1-container{
@@ -308,20 +288,17 @@ p {
 @media (min-width: 601px) and (max-width: 900px) {
   .container-mid {
     flex-direction: column;
-    /* Cambia la dirección del flexbox a columna */
     height: auto;
     /* Elimina la altura fija para adaptarse al contenido */
   }
 
-  .left-half,
-  .right-half {
+  .caja-1,
+  .caja-2 {
     flex: 1;
     width: 100%;
-    /* Asegura que ambos lados ocupen el ancho completo */
   }
 
-  .right-half {
+  .caja-2 {
     padding: 15px;
-    /* Aumenta un poco el espacio interno */
   }
 }
