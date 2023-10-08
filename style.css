@@ -26,7 +26,7 @@
 
 
 .background-container {
-  background-image: url('/images/ba1.jpg');
+  background-image: url('./images/ba1.jpg');
   background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
   background-position: center;
   min-height: 100vh;
