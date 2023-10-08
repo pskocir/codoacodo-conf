@@ -60,19 +60,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  .background-container {
-    justify-content: center;
-    align-items: center;
-    min-height: auto;
-  }
 
-  .card-mod {
-    width: 90%;
-    max-width: none;
-  }
-
-}
 
 
 .caja-oradores {
@@ -182,21 +170,6 @@ footer nav ul li a {
   font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-  footer nav ul {
-
-    flex-direction: column;
-
-  }
-
-  footer nav ul li {
-    margin: 5px;
-
-  }
-
-
-}
-
 body {
   font-family: Arial, sans-serif;
 }
@@ -301,4 +274,30 @@ p {
   .caja-2 {
     padding: 15px;
   }
+}
+
+@media screen and (max-width: 768px) {
+  footer nav ul {
+
+    flex-direction: column;
+
+  }
+
+  footer nav ul li {
+    margin: 5px;
+
+  }
+
+  .background-container {
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+  }
+
+  .card-mod {
+    width: 90%;
+    max-width: none;
+  }
+
+
 }
